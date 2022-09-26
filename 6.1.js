@@ -1,4 +1,4 @@
-const strings = ['a', 'b', 'c', 'd','e'];
+const strings = ['a', 'b', 'c', 'd'];
 
 
 strings.push('e');
@@ -6,9 +6,9 @@ strings.push('e');
 strings.pop();
 strings.pop();
 
-// unshift
+strings.unshift('x');
 //  strings.unshift('x');
 
- strings.splice(0,2,'alien');
+ strings.splice(2,0,'alien');
 
 console.log(strings);
