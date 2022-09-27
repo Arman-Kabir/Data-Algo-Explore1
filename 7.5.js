@@ -1,7 +1,8 @@
 class HashTable {
     constructor(size) {
         this.data = new Array(size);
-        // [['grapes':10000]]
+        [['grapes',10000]]
+        
     }
 
 
