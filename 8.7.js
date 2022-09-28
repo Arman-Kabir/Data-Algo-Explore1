@@ -1,4 +1,11 @@
 
+// class Node {
+//     constructor(value) {
+//         this.value = value,
+//             this.next = null;
+//     }
+// }
+
 class LinkedList {
     constructor(value) {
         this.head = {
@@ -15,6 +22,8 @@ class LinkedList {
         };
         this.tail.next = newNode;
         this.tail = newNode;
+        this.length++;
+        return this;
     }
 
     prepend(value) {
