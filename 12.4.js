@@ -11,3 +11,7 @@ function inception() {
 }
 
 inception();
+
+// identify the base case
+// Identify the recursive case
+// get closer and closer and return when needed. Usually u have two returns.
