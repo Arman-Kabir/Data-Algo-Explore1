@@ -6,3 +6,13 @@
 
     * In a graph - each item is called a node or a vertex. Nodes are then connected with edges.
 */
+
+// 11.2
+/*
+    1.Directed -- useful for describing traffic flow
+
+    2.Undirected -- facebook is un directed graph
+
+    *Weighted Graph * Weighted graph
+    * Cyclic  * Acyclic
+*/
