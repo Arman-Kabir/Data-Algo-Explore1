@@ -1,4 +1,19 @@
 
+// 14.11  Breadth First Search/Traversal
+/*
+  In BFS - from the top then to the left and visit all the nodes in that level- it takes a lot of memory
+  When it goes through a level - we need to keep a reference to all the children nodes of every node that
+  we visit - that's where the memory is coming from.. Bcz we have to keep track of those children
+  of th level that we're on.
+
+  we r using queue data structure to keep a reference to the nodes that we want to come back
+  and discover it's child nodes.
+
+
+*/
+
+
+
 // bst
 
 class Node {
