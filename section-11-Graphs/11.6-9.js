@@ -31,3 +31,18 @@ myGraph.addVertex('6');
 
 myGraph.addEdge('1','3');
 console.log(myGraph);
+
+
+
+// 11.7 Review // neo4j - to build complex graph database
+// Scaling is hard in graph
+
+// 11.8-9
+/*  ***Data Structures                      ***Algorithms
+
+    *Arrays     *Trees                      *Sorting
+    *Stack      *Tries                      *Dynamic Programming
+    *Queue      *Graphs                     *BFS+DFS(Searching)
+    *Linked List *Hash Tables               *Recursion
+*/
+
