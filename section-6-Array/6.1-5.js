@@ -27,7 +27,15 @@ strings.pop();   //O(1)
 strings.unshift('x');   //O(n)
 
 // splice -- add something in the middle of the array
-strings.splice();
+strings.splice(2,0,'alien');    //O(n)
 
 
 console.log(strings);
+
+// 6.2
+/*
+    Two types of arrays 
+    *static
+     *dynamic
+
+*/
