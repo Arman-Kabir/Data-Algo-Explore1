@@ -106,12 +106,50 @@ console.log(object4.a);
 
 class Player {
     constructor(name, type) {
+        console.log('player',this);
         this.name = name;
         this.type = type;
+    }
+    introduce() {
+        console.log(`Hi I am ${this.name}, I'm a ${this.type}`);
     }
     /*
         Explanation ::: Every time I'm making a copy of a player ,the first thing that gets run
         is the constructor function and this constructor function is gonna create these properties
          on the player object so, name and a type.
+
+         Then i can create anything that i want for the player.
+
+         let's say we want to create a method such as introduce().
     */
 }
+
+class Wizard extends Player {
+    constructor(name, type) {
+        super(name, type)
+        console.log('wizard',this);
+    }
+    play() {
+        console.log(`WEEEEEEE I'm a ${this.type}`);
+    }
+
+    /*
+        I want Wizard to extend whatever a player has.
+        * Anytime we extend something we need to also call the constructor function of the Player. ---
+        We have to do something called super with the properties that we want to pass to the constructor.
+
+        *when u extenda a class u need to use super so that u essentially have access to these. 
+
+
+    */
+}
+
+const wizard1 = new Wizard('shelly','Healer');
+const wizard2 = new Wizard('shawn','Dark magic');
+
+console.log(wizard1);
+console.log(wizard1.play());
+console.log(wizard1.introduce());
+console.log(wizard2);
+console.log(wizard2.play());
+console.log(wizard2.introduce());
