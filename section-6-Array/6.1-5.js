@@ -27,14 +27,16 @@ strings.pop();   //O(1)
 strings.unshift('x');   //O(n)
 
 // splice -- add something in the middle of the array
-strings.splice(2,0,'alien');    //O(n)
+strings.splice(2, 0, 'alien');    //O(n)
 
 
 console.log(strings);
 
+
+
 // 6.2
 /*
-    Two types of arrays 
+    Two types of arrays
     *static
      *dynamic
 
@@ -51,4 +53,65 @@ console.log(strings);
 
 */
 
-// 6.3
+
+
+// 6.4 - we are talk about some advanced objects concepts
+/*
+    3 things that are important with objects  *reference type  *context  *instantiation
+
+    Objects are called the reference types in js. it's non-primitive type and
+     not drfined by the programming languages.
+
+*/
+
+[] === []
+console.log([] === []);
+console.log([1] === [1]);
+
+var object1 = { value: 10 };
+var object2 = object1;
+var object3 = { value: 10 };
+
+console.log(object1 === object2);
+console.log(object1 === object3);
+
+object1.value = 15
+
+console.log(object2.value);
+console.log(object3.value);
+
+
+// context vs scope
+/*
+    *Scope is created when it sees curly braces.
+
+    *Context tells u where we are within the object
+
+    *this refers to what object it's inside of
+*/
+const object4 = {
+    a: function () {
+        console.log(this);
+    }
+}
+
+console.log(object4.a);
+
+
+// Instantiation
+/*
+    * Instantiation is when we make a copy of an object and re-use the code. 
+    * u'r making instances or multiple copies of an object
+*/
+
+class Player {
+    constructor(name, type) {
+        this.name = name;
+        this.type = type;
+    }
+    /*
+        Explanation ::: Every time I'm making a copy of a player ,the first thing that gets run
+        is the constructor function and this constructor function is gonna create these properties
+         on the player object so, name and a type.
+    */
+}
