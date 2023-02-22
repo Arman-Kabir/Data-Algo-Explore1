@@ -38,4 +38,17 @@ console.log(strings);
     *static
      *dynamic
 
+     static array in c++ -- we have to allocate memory while declaring
+     int a [20]
+     int b [5] ===== [1,2,3,4,5]
+
+     In js, we don't have to worry about it. We never allocate memory.
+
+     In js and python-- they work with dynamic arrays.Means they automatically allocate memory
+      according to the increase in size of the array.
+
+      Dynamic expands as u add elements.
+
 */
+
+// 6.3
