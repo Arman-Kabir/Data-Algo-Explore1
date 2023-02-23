@@ -1,5 +1,8 @@
+// WHat is a Hash function ? - 
+
 // md5 hash Generator -- SHA-
 // 256 hash generator
+
 // Hash Function is used all across computer science - a hash function is simply a function
 //  that generates a value of fixed length for each input that it gets
 
