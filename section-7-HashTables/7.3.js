@@ -12,9 +12,9 @@ let user = {
 // age,name,magic,and function scream are all going to get placed somewhere in memory in different
 // addresses. But we can access them really really fast. 
 
-user.age //O(1)
-user.spell = 'halum halum' //O(1)
-console.log(user.scream);
+console.log(user.age); //O(1)
+console.log(user.spell = 'halum halum'); //O(1)
+console.log(user.scream );
 console.log(user);
 
 // Our computer has limited space and when we create an object or hash table the computer decides

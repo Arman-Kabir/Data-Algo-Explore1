@@ -1,4 +1,4 @@
-// Singly and doubly linked lists
+//1   // Singly and doubly linked lists
 
 /*  Q. What problem do we encounter  with arrays ? 
     A. With static arrays - We only had a certain amount of data or memory that can be
@@ -13,7 +13,17 @@
     Then HashTables came. But the data wasn't in ordered.
 
     Then Linked Lists came to the rescue
+*/
 
 
+
+//2      //What is a linked list ?
+/*
+    as name suggests - it's a list that is linked.
+    * A singly linked list contains a set of nodes. Nodes have two elements.
+    * The value of the data u want to store - the number 5, and a pointer to the next node in line. 
+    * The first node is called the head and the last node is called the tail, linked list are null terminated which signifies that it's the end of the list. tail node points to null
+    * 
+    * Linked list  -- an element that links to the next element that links to the next element and it keeps going, keeps going untill the last element that points to null. u can have any sort of data type.
 
 */
