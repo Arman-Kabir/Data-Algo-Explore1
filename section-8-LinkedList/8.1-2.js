@@ -47,5 +47,13 @@
 
 //5 What is a pointer?
 /*
-    
+    A pointer is a reference to another place in memory or another object or another node.
+    *Pointer is simply a reference.
+    *Pointer is saying this is where in memory.
+    *Js is garbage collected so memory is managed automatically
 */
+const obj1 = {a:true};
+const obj2 = obj1;
+obj1.a = 'booya';
+console.log('1',obj1);
+console.log('2',obj2);
