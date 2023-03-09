@@ -13,15 +13,29 @@ class Stack {
         this.length = 0;
     }
     peek() {
-
+        return this.top;
     }
     push(value) {
-
+        const newNode = new Node(value);
+        if (this.length === 0) {
+            this.top = newNode;
+            this.bottom = newNode;
+        } else {
+            const holdingPointer = this.top;
+            this.top = newNode;
+            this.top.next = holdingPointer;
+        }
+        this.length++;
+        return this;
     }
     pop() {
-
+        
     }
     // isEmpty
 }
 
 const myStack = new Stack();
+console.log(myStack.push('google'));
+console.log(myStack.push('Udemy'));
+console.log(myStack.push('Discord'));
+console.log(myStack.peek());
