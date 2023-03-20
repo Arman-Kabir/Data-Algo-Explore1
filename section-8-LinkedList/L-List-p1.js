@@ -51,7 +51,8 @@ class LinkedList {
         return array;
     }
     insert(index,value){
-         
+        //  
+        
     }
 }
 
